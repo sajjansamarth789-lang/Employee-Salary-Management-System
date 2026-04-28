@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <servlet-class>com.servlet.AddEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <url-pattern>/AddEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <url-pattern>/UpdateEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <url-pattern>/DeleteEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayEmployeeServlet</servlet-name>
+        <servlet-class>com.servlet.DisplayEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayEmployeeServlet</servlet-name>
+        <url-pattern>/DisplayEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>com.servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
